@@ -1,0 +1,32 @@
+{% extends 'main.html' %}
+
+{% block content %}
+    <br>
+    <br>
+    <center>
+        <div class="col-sm-8">
+            {% for blog in blogs %}
+                {% for post in posts %}
+                    {% if post.blog == blog %}
+                        <div style="text-align: left;" class="jumbotron">
+                            <a href="{{ blog.get_absolute_url }}"><h3>{{ blog.user.get_full_name }}</h3></a>
+                            <p class="lead">{{ post.title }}</p>
+                            <p>{{ post.text }}</p>
+                            <h6>{{ post.date }}</h6>
+
+                            <form method="POST">{% csrf_token %}
+                                {% if post.read == False %}
+                                    <input name="post" type="hidden" value="{{ post.id }}">
+                                    <button type="submit" class="btn btn-primary btn-sm">Read</button>
+                                {% else %}
+                                    <input name="post" type="hidden" value="{{ post.id }}">
+                                    <button type="submit" class="btn btn-secondary btn-sm">Was read</button>
+                                {% endif %}
+                            </form>
+                        </div>
+                        {% endif %}
+                    {% endfor %}
+            {% endfor %}
+        </div>
+    </center>
+{% endblock %}

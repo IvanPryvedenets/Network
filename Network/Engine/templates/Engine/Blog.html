@@ -1,0 +1,59 @@
+{% extends 'main.html' %}
+
+
+{% block content %}
+        <br>
+
+        <center>
+            <h1>{{ blog.user.first_name }} {{ blog.user.last_name }}</h1>
+
+            <hr>
+
+            {% if blog.user.is_active == False %}
+                <div class="col-sm-6">
+                    <form action="{% url 'join_url' %}" method="POST">{% csrf_token %}
+                        {% if blog.join == False %}
+                            <input name="user" type="hidden" value="{{ blog.user.id }}">
+                            <button style="width: 20%; float: left;" class="btn btn-outline-warning" type="submit">Subscribe</button>
+                        {% else %}
+                            <input name="user" type="hidden" value="{{ blog.user.id }}">
+                            <button style="width: 20%; float: left;" class="btn btn-outline-secondary" type="submit">Unsubscribe</button>
+                        {% endif %}
+                    </form>
+                </div>
+
+
+            <br>
+            <br>
+
+            {% else %}
+                <form method="POST">{% csrf_token %}
+                    <div class="col-sm-6">
+                        {{ form.title }}
+                        <br>
+                        {{ form.text }}
+                        <br>
+                        <button style="width: 100%;" class="btn btn-outline-success" type="submit">Post</button>
+                    </div>
+                </form>
+            {% endif %}
+
+            <br>
+            <br>
+            <br>
+
+            <div style="text-align: left" class="col-sm-6">
+                {% if posts %}
+                    <h2>Posts</h2>
+                    <br>
+                    {% for post in posts %}
+                        <h4 >{{ post.title }}</h4>
+                        <div style="float: left;"><p style="width: 90%; float: right;">{{ post.text }}</p></div>
+                        <h6>{{ post.date }}</h6>
+                        <br>
+                        <br>
+                    {% endfor %}
+                {% endif %}
+            </div>
+        </center>
+{% endblock %}

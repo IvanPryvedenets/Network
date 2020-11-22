@@ -1,0 +1,30 @@
+{% extends 'main.html' %}
+
+{% block content %}
+    <br>
+    <br>
+    <center>
+        <div class="col-sm-8">
+            {% for user in users %}
+                <div style="text-align: left;" class="jumbotron">
+                    <a href="{{ user.blog.get_absolute_url }}"><h1 class="display-4">{{ user.get_full_name }}</h1></a>
+                    <h4>Posts of {{ user.first_name }}</h4>
+                    {% for post in posts %}
+                        {% if post.blog == user.blog %}
+                            <p class="lead">{{ post.title }}</p>
+                        {% endif %}
+                    {% endfor %}
+
+                    <form action="{% url 'join_url' %}" method="POST">{% csrf_token %}
+                        {% if user.blog.join == False %}
+                            <button style="width: 20%; float: left;" class="btn btn-outline-warning" type="submit">Subscribe</button>
+                        {% else %}
+                            <input name="user" type="hidden" value="{{ user.id }}">
+                            <button style="width: 20%; float: left;" class="btn btn-outline-secondary" type="submit">Unsubscribe</button>
+                        {% endif %}
+                    </form>
+                </div>
+            {% endfor %}
+        </div>
+    </center>
+{% endblock %}
