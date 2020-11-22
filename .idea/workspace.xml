@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="25a584f1-caea-4664-adda-e33ff3def25f" name="Default Changelist" comment="" />
+    <list default="true" id="25a584f1-caea-4664-adda-e33ff3def25f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +29,7 @@
         <entry file="file://$PROJECT_DIR$/Network/Engine/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
-              <caret line="8" column="43" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
+              <caret line="8" column="90" selection-start-line="8" selection-start-column="90" selection-end-line="8" selection-end-column="90" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -83,8 +85,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Network/Engine/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-728">
-              <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+            <state relative-caret-position="1335">
+              <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -114,6 +116,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -126,12 +131,12 @@
         <option value="$PROJECT_DIR$/Network/template/main.html" />
         <option value="$PROJECT_DIR$/Network/Network/settings.py" />
         <option value="$PROJECT_DIR$/Network/Network/wsgi.py" />
-        <option value="$PROJECT_DIR$/Network/Engine/views.py" />
         <option value="$PROJECT_DIR$/Network/Engine/admin.py" />
         <option value="$PROJECT_DIR$/Network/Engine/context_process.py" />
         <option value="$PROJECT_DIR$/Network/Engine/forms.py" />
         <option value="$PROJECT_DIR$/Network/Engine/models.py" />
         <option value="$PROJECT_DIR$/Network/Engine/urls.py" />
+        <option value="$PROJECT_DIR$/Network/Engine/views.py" />
       </list>
     </option>
   </component>
@@ -141,6 +146,7 @@
     <option name="width" value="1315" />
     <option name="height" value="743" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -204,7 +210,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="51" y="25" width="1315" height="743" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15712075" />
       <window_info id="Structure" order="1" weight="0.25" />
@@ -336,7 +341,7 @@
     <entry file="file://$PROJECT_DIR$/Network/Engine/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="8" column="43" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
+          <caret line="8" column="90" selection-start-line="8" selection-start-column="90" selection-end-line="8" selection-end-column="90" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
           </folding>
@@ -345,8 +350,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Network/Engine/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-728">
-          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+        <state relative-caret-position="1335">
+          <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
